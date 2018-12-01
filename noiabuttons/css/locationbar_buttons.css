@@ -1,0 +1,65 @@
+/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* code mostly taken from 'NoiaButtons' add-on **************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx/noiabuttons ********************************/
+/************************************************************************************************/
+
+/************************************************************************************************/
+/* NoiaButtons CSS for Firefox 60+ **************************************************************/
+/************************************************************************************************/
+
+
+#urlbar .urlbar-go-button {
+  list-style-image: url("./../images/toolbar_noia.png") !important;
+  -moz-image-region: rect(0, 144px, 36px, 108px) !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+}
+
+#main-window[uidensity="compact"] #urlbar .urlbar-go-button {
+  padding: 4px !important;
+}
+
+#main-window:not([uidensity="touch"]):not([uidensity="compact"]) #urlbar .urlbar-go-button {
+  padding: 4px 2px !important;
+}
+
+#main-window[uidensity="touch"] #urlbar .urlbar-go-button {
+  padding: 4px 2px !important;
+}
+
+#urlbar .urlbar-history-dropmarker {
+  list-style-image: url("./../images/dropmarker14.png") !important;
+  -moz-image-region: rect(0 14px 14px 0) !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+}
+
+#main-window[uidensity="compact"] #urlbar .urlbar-history-dropmarker {
+  padding: 5px 0 !important;
+}
+
+#main-window:not([uidensity="touch"]):not([uidensity="compact"]) #urlbar .urlbar-history-dropmarker {
+  padding: 7px 0 !important;
+}
+
+#main-window[uidensity="touch"] #urlbar .urlbar-history-dropmarker {
+  padding: 8px 0 !important;
+}
+	
+#urlbar .urlbar-go-button:hover,
+#urlbar .urlbar-history-dropmarker:hover{
+  filter: brightness(1.15) !important;
+}
+
+#urlbar .urlbar-go-button,
+#urlbar .urlbar-history-dropmarker{
+  -moz-appearance: none !important;
+  background:none !important;
+  box-shadow: none !important;
+}
