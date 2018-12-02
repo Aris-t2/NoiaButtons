@@ -1,11 +1,11 @@
 /* Firefox Quantum userChrome.css tweaks ********************************************************/
-/* code mostly taken from 'NoiaButtons' add-on **************************************************/
-/* Github: https://github.com/aris-t2/customcssforfx/noiabuttons ********************************/
+/* Code mostly taken from 'NoiaButtons' add-on **************************************************/
+/* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
 /* NoiaButtons CSS for Firefox 60+ **************************************************************/
-/* version 1.1.0 ********************************************************************************/
+/* version 1.1.1 ********************************************************************************/
 /************************************************************************************************/
 
 
@@ -30,8 +30,9 @@
   
 *************************************************************************************************/
 
-/* [!] only use on at a time *******************************************************************/
+
 /* Icons for default browser buttons ************************************************************/
+/* [!] only use on at a time ********************************************************************/
 @import "./css/toolbar_buttons_noia.css"; /**/
 /* @import "./css/toolbar_buttons_firefox1.css"; /**/
 /* @import "./css/toolbar_buttons_firefox2.css"; /**/
@@ -41,8 +42,8 @@
 /* Shrink icons on hover ************************************************************************/
 @import "./css/toolbar_buttons_reduce_size_on_hover.css"; /**/
 
-/* [!] only use on at a time *******************************************************************/
 /* Icon size on navigation toolbar (auto: compact=24/normal=30/touch=36) ************************/
+/* [!] only use on at a time ********************************************************************/
 @import "./css/toolbar_buttons_size_on_navbar_auto.css"; /**/
 /* @import "./css/toolbar_buttons_size_on_navbar_18px.css"; /**/
 /* @import "./css/toolbar_buttons_size_on_navbar_24px.css"; /**/
@@ -52,12 +53,21 @@
 /* Location bar: go button and autocomplete dropmarker icons ***********************************/
 @import "./css/locationbar_buttons.css"; /**/
 
+/* 'Light' and 'Dark' toolbar and tabs themes + 'tabs not on top' (known from "Noia" themes) ***/
 /* [!] only use on at a time *******************************************************************/
-/* Light Noia theme for tabs & toolbars + 'tabs not on top' (known from "Noia" themes) *********/
-/* @import "./css/noiaui_light.css"; /**/
-/* @import "./css/noiaui_light_tabs_below_navigation_toolbar.css"; /**/
-/* @import "./css/noiaui_light_tabs_below_navigation_toolbar_fx65.css"; /**/
-/* Dark Noia theme for tabs & toolbars + 'tabs not on top' (known from "Noia" themes) **********/
-/* @import "./css/noiaui_dark.css"; /**/
-/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar.css"; /**/
-/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar_fx65.css"; /**/
+/* @import "./css/noiaui_light.css"; /**/  /* Light theme */
+/* @import "./css/noiaui_light_tabs_below_navigation_toolbar.css"; /**/  /* Light theme + 'tabs not on top' */
+/* @import "./css/noiaui_light_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Light theme + 'tabs not on top' for Fx65+ */
+/* @import "./css/noiaui_dark.css"; /**/  /* Dark theme*/
+/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar.css"; /**/  /* Dark theme + 'tabs not on top' */
+/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Dark theme + 'tabs not on top' for Fx65+ */
+
+/* Alternative tab colors for aboves 'Light' and 'Dark' themes *********************************/
+/* [!] only use on at a time *******************************************************************/
+/* @import "./css/noiaui_light_alternative_tabs.css"; /**/
+/* @import "./css/noiaui_dark_alternative_tabs.css"; /**/
+
+/* Separator between nav-bar and bookmarks toolbar for aboves 'Light' and 'Dark' themes ********/
+/* [!] only use on at a time *******************************************************************/
+/* @import "./css/noiaui_light_navbar_bookbar_separator.css"; /**/
+/* @import "./css/noiaui_dark_navbar_bookbar_separator.css"; /**/

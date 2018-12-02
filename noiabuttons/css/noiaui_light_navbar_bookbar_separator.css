@@ -1,0 +1,12 @@
+/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
+/************************************************************************************************/
+
+
+/* toolbar separator between navigation toolbar and bookmarks toolbar */
+#navigator-toolbox > #nav-bar {
+  border-bottom: 1px solid #969797 !important;
+}
+#navigator-toolbox > #PersonalToolbar {
+  border-top: 1px solid #ffffff !important;
+}

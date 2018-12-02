@@ -1,10 +1,5 @@
 /* Firefox Quantum userChrome.css tweaks ********************************************************/
-/* code mostly taken from 'NoiaButtons' add-on **************************************************/
-/* Github: https://github.com/aris-t2/customcssforfx/noiabuttons ********************************/
-/************************************************************************************************/
-
-/************************************************************************************************/
-/* NoiaButtons CSS for Firefox 60+ **************************************************************/
+/* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
 /************************************************************************************************/
 
 
@@ -29,14 +24,6 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 #urlbar:-moz-locale-dir(rtl) box {
   border-top-right-radius: 3px !important;
   border-bottom-right-radius: 3px !important;
-}
-
-/* toolbar separator between navigation toolbar and bookmarks toolbar *//*
-#navigator-toolbox > #nav-bar {
-  border-bottom: 1px solid #969797 !important;
-}
-#navigator-toolbox > #PersonalToolbar {
-  border-top: 1px solid #ffffff !important;
 }
 
 /******************************************************
@@ -114,12 +101,6 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   background-image: linear-gradient(#CCCCCC,#ffffff) !important;
 }
 
-/* default tabs color v2 *//*
-.tabs-newtab-button,
-.tabbrowser-tab .tab-content {
-  background-image: linear-gradient(#d5d5d5,#CCCCCC,#d5d5d5) !important;
-}
-
 /* selected & hovered tabs color */
 .tabbrowser-tab .tab-content[selected="true"],
 .tabs-newtab-button:hover,
@@ -127,22 +108,11 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   background-image: linear-gradient(#99FFFF,#00CCFF,#99FFFF) !important;
 }
 
-/* selected & hovered tabs color v2 *//*
-.tabbrowser-tab .tab-content[selected="true"],
-.tabs-newtab-button:hover,
-.tabbrowser-tab:hover .tab-content:not([selected="true"]) {
-  background-image: linear-gradient(#dddddd,#ffffff) !important;
-}
-
 /* unloaded/pending tabs color *//*
 .tabbrowser-tab[pending] .tab-content {
   background: red !important;
 }
-
-/* unread tabs color *//*
-.tabbrowser-tab[unread] .tab-content {
-  background: purple !important;
-}
+*/
 
 /* tab border color */
 #TabsToolbar .tabs-newtab-button,
