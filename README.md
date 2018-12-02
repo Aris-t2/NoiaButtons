@@ -100,7 +100,7 @@ Restart Firefox for changes to take effect.
 
 _Example_  
 Open `./css/noiaui_light.css` file  
-Look for `/* toolbar separator between navigation toolbar and bookmarks toolbar *//*`  
+Look for `/* unloaded/pending tabs color *//*`  
 Remove `/*` at lines end to make that part of the code active. Save the file and restart Firefox.  
 
 
