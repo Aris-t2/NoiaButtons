@@ -13,6 +13,7 @@
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
 - [How to find item ids and attributes?](#how-to-find-item-ids-and-attributes)  
 - [How to modify custom user styles?](#how-to-modify-custom-user-styles)  
+- [Available options](#available-options)  
 
 ## WebExtensions can not modify Firefox Quantums appearance properly
 
@@ -101,3 +102,41 @@ _Example_
 Open `./css/noiaui_light.css` file  
 Look for `/* toolbar separator between navigation toolbar and bookmarks toolbar *//*`  
 Remove `/*` at lines end to make that part of the code active. Save the file and restart Firefox.  
+
+
+## Available options
+
+[Buttons]  
+- Noia button icons for toolbars (default)  
+- Firefox 1 button icons for toolbars  
+- Firefox 2 button icons for toolbars  
+- Firefox 3 button icons for toolbars  
+- Firefox 4 button icons for toolbars  
+  
+- shrink button icons on hover (default)  
+  
+- autosize for button icons on nav-bar (default) [compact=24/normal=30/touch=36]  
+- 18x18px (tiny) size for button icons on nav-bar  
+- 24x24px (small) size for button icons on nav-bar  
+- 30x30px (normal) size for button icons on nav-bar  
+- 36x36px (large) size for button icons on nav-bar  
+  
+[Location Bar]  
+- location bar icons for go button and autocomplete dropmarker
+  
+[Themes for toolbars and tabs known from 'Noia4' and 'NoiaFox' themes *]  
+- Noia theme (light)  
+- Noia theme (light) + tabs below navigation toolbar  
+- Noia theme (light) + tabs below navigation toolbar (Fx65+)  
+- Noia theme (dark)  
+- Noia theme (dark) + tabs below navigation toolbar  
+- Noia theme (dark) + tabs below navigation toolbar (Fx65+)  
+  
+[Additional theme settings]  
+- Noia theme (light): alternative tab colors  
+- Noia theme (dark): alternative tab colors  
+- Noia theme (light): separator between navigation toolbar and bookmarks toolbar  
+- Noia theme (dark): separator between navigation toolbar and bookmarks toolbar  
+
+
+
