@@ -55,10 +55,10 @@ Edit _userChrome.css_ and _userContent.css_ with any text editor (**[Notepad++](
 Restart Firefox after every modification for changes to take effect.  
 
 **Example**  
-If "classic button appearance for navigation toolbar buttons" should be <u>enabled</u>, the corresponding line has to look like this:  
+If "light Noia ui" should be <u>enabled</u>, the corresponding line has to look like this:  
 `@import "./css/noiaui_light.css";`  
 
-If "classic button appearance for navigation toolbar buttons" should be <u>disabled</u>, the corresponding line has to look like this:  
+If "light Noia ui" should be <u>disabled</u>, the corresponding line has to look like this:  
 `/* @import "./css/noiaui_light.css"; */`  
 
 Note  
