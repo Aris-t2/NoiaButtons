@@ -36,15 +36,15 @@
 }
 
 #main-window[uidensity="compact"] #urlbar .urlbar-history-dropmarker {
-  padding: 5px 0 !important;
+  padding: 5px 5px !important;
 }
 
 #main-window:not([uidensity="touch"]):not([uidensity="compact"]) #urlbar .urlbar-history-dropmarker {
-  padding: 7px 0 !important;
+  padding: 7px 5px !important;
 }
 
 #main-window[uidensity="touch"] #urlbar .urlbar-history-dropmarker {
-  padding: 8px 0 !important;
+  padding: 8px 5px !important;
 }
 	
 #urlbar .urlbar-go-button:hover,
