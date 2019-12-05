@@ -4,21 +4,21 @@
 
 
 /* default tabs color v2 */
-.tabs-newtab-button,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab .tab-content {
   background-image: linear-gradient(#000000,#000000) !important;
 }
 
 /* selected & hovered tabs color v2 */
 .tabbrowser-tab .tab-content[selected="true"],
-.tabs-newtab-button:hover,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
 .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
   background-image: linear-gradient(#000000,#000000,#000000,#444444,#838383) !important;
   color: #ffffff !important;
 }
 
 .tabbrowser-tab .tab-content[selected="true"] .tab-label,
-.tabs-newtab-button:hover .tab-label,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover .tab-label,
 .tabbrowser-tab:hover .tab-content:not([selected="true"]) .tab-label {
   color: #ffffff !important;
 }

@@ -83,7 +83,7 @@
 
 /* Add 4px extra margin on top of the tabs toolbar on Windows 7. */
 @media (-moz-os-version: windows-win7) {
-  #main-window[tabsintitlebar] [chromehidden~="menubar"] #toolbar-menubar ~ #TabsToolbar,
+  #main-window[tabsintitlebar][chromehidden~="menubar"] #toolbar-menubar ~ #TabsToolbar,
   #main-window[tabsintitlebar] #toolbar-menubar[autohide="true"][inactive] ~ #TabsToolbar {
     padding-top: 0px !important;
   }

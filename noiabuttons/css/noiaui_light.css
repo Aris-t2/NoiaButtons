@@ -35,7 +35,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 ** from my Classic Theme Restorer add-on **************
 ******************************************************/
 
-.tabs-newtab-button,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab .tab-content {
   -moz-box-align: center !important;
   color: #000000 !important;
@@ -96,14 +96,14 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 }
 
 /* default tabs color */
-.tabs-newtab-button,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab .tab-content {
   background-image: linear-gradient(#CCCCCC,#ffffff) !important;
 }
 
 /* selected & hovered tabs color */
 .tabbrowser-tab .tab-content[selected="true"],
-.tabs-newtab-button:hover,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
 .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
   background-image: linear-gradient(#99FFFF,#00CCFF,#99FFFF) !important;
 }
@@ -115,19 +115,19 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 */
 
 /* tab border color */
-#TabsToolbar .tabs-newtab-button,
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab .tab-content {
   border: 1px solid #969797 !important;
 }
 
-#TabsToolbar .tabs-newtab-button:hover,
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
 #TabsToolbar .tabbrowser-tab[selected] .tab-content,
 #TabsToolbar .tabbrowser-tab:hover .tab-content {
   border: 1px solid #4379bd !important;
 }
 
 /* tab top border roundness */
-#TabsToolbar .tabs-newtab-button,
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
@@ -141,7 +141,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 }
 
 /* space between tabs */
-.tabs-newtab-button,
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab {
   -moz-margin-start: 0px !important;
 }
@@ -161,14 +161,14 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 }
 
 /* width of new tab tab */
-#TabsToolbar .tabs-newtab-button{
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
   min-width: 0px !important;
   width: 30px !important;
   margin-bottom: 0px !important;
 }
 
 /* size of new tab tabs '+' icon */
-.tabs-newtab-button .toolbarbutton-icon{
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon{
   min-width: 0px !important;
   min-height: 0px !important;
   width: 16px !important;

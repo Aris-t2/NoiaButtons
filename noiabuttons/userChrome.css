@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* NoiaButtons CSS for Firefox 60+ **************************************************************/
-/* version 1.1.4 ********************************************************************************/
+/* version 1.1.5 ********************************************************************************/
 /************************************************************************************************/
 
 
@@ -57,10 +57,12 @@
 /* [!] only use on at a time *******************************************************************/
 /* @import "./css/noiaui_light.css"; /**/  /* Light theme */
 /* @import "./css/noiaui_light_tabs_below_navigation_toolbar.css"; /**/  /* Light theme + 'tabs not on top' */
-/* @import "./css/noiaui_light_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Light theme + 'tabs not on top' for Fx65+ */
+/* @import "./css/noiaui_light_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Light theme + 'tabs not on top' for Fx65-71 */
+/*  @import "./css/noiaui_light_tabs_below_navigation_toolbar_fx72.css"; /**/  /* Light theme + 'tabs not on top' for Fx72+ */
 /* @import "./css/noiaui_dark.css"; /**/  /* Dark theme*/
 /* @import "./css/noiaui_dark_tabs_below_navigation_toolbar.css"; /**/  /* Dark theme + 'tabs not on top' */
-/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Dark theme + 'tabs not on top' for Fx65+ */
+/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Dark theme + 'tabs not on top' for Fx65-71 */
+/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar_fx72.css"; /**/  /* Dark theme + 'tabs not on top' for Fx72+ */
 
 /* Alternative tab colors for aboves 'Light' and 'Dark' themes *********************************/
 /* [!] only use on at a time *******************************************************************/
@@ -71,3 +73,5 @@
 /* [!] only use on at a time *******************************************************************/
 /* @import "./css/noiaui_light_navbar_bookbar_separator.css"; /**/
 /* @import "./css/noiaui_dark_navbar_bookbar_separator.css"; /**/
+
+

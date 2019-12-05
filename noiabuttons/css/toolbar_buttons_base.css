@@ -61,12 +61,12 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button,#stop-button,#relo
 }
 
 /**/
-.tabs-newtab-button {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button) {
   list-style-image: url("./../images/newtab.png") !important;
   -moz-image-region: rect(0, 16px, 16px, 0) !important;
 }
 	
-.tabs-newtab-button:hover {
+:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover {
   list-style-image: url("./../images/newtab.png") !important;
   -moz-image-region: rect(0, 16px, 16px, 0) !important;
 }
