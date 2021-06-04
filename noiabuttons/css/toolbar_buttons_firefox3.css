@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* Firefox userChrome.css tweaks ****************************************************************/
 /* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
 /************************************************************************************************/
 
@@ -11,15 +11,11 @@
   list-style-image: url("./../images/toolbar_fx3.png") !important;
 }
 
-#downloads-button:not(:-moz-any([progress],[counter],[paused],[attention])) #downloads-indicator-progress-outer,
-#downloads-button:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
-  background: -moz-image-rect(url("./../images/toolbar_fx3.png"), 0, 396, 36, 360) !important;
+#downloads-button .toolbarbutton-icon,
+#downloads-button[attention="success"] .toolbarbutton-icon {
+  list-style-image: url("./../images/toolbar_fx3.png") !important;
 }
 
-#downloads-button[progress] #downloads-indicator-progress-outer {
-  background: -moz-image-rect(url("./../images/toolbar_dl_progress_fx3.png"), 0, 36, 36, 0) !important;
-}
-
-#downloads-button[attention] #downloads-indicator-progress-outer {
-  background-image: -moz-image-rect(url("./../images/toolbar_fx3.png"), 36, 396, 72, 360) !important;
+#downloads-button[progress="true"] .toolbarbutton-icon {
+  list-style-image: url("./../images/toolbar_dl_progress_fx3.png") !important;
 }

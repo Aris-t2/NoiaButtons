@@ -1,32 +1,29 @@
-/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* Firefox userChrome.css tweaks ****************************************************************/
 /* Code mostly taken from 'NoiaButtons' add-on **************************************************/
 /* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
-/* NoiaButtons CSS for Firefox 60+ **************************************************************/
-/* version 1.1.5 ********************************************************************************/
+/* NoiaButtons CSS for Firefox 89+ **************************************************************/
+/* Version 2.0.0 ********************************************************************************/
 /************************************************************************************************/
 
+/* Last version compatible with Firefox 60-88 is v1.1.5 ******************************************
+   Get it here: https://github.com/Aris-t2/NoiaButtons/releases/tag/1.1.5
+*************************************************************************************************/
 
 /*************************************************************************************************
 
   README
   
+  [!] Firefox 69+ requires this preference to be enabled or custom styles will not be loaded:
+	'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
+  
   Finding profile folder: address bar > about:support > Profile Folder > Open Folder
   CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
   
   ENABLING options: remove the combination of / and * before '@import'.
-  DISABLING options: add the combination of / and * before '@import'.
-  
-  FIREFOX BUGS (nothing CSS code can do about):
-  - some '@import' features might not work properly on macOS and Linux
-  - some '@import' features might not work properly, if multi-process mode (e10s) is disabled
-  
-  CSS tweaks won't work, if '@namespace' references are used inside .css files!
-  
-  [!] Firefox 65+ (look for '*_fx65.css')
-	  - 'tabs not on top' mode uses an own new option
+  DISABLING options: add the combination of / and * before '@import'. 
   
 *************************************************************************************************/
 
@@ -50,28 +47,22 @@
 /* @import "./css/toolbar_buttons_size_on_navbar_30px.css"; /**/
 /* @import "./css/toolbar_buttons_size_on_navbar_36px.css"; /**/
 
-/* Location bar: go button and autocomplete dropmarker icons ***********************************/
-/* @import "./css/locationbar_buttons.css"; /**/
+/* Location bar & search bar: Noia icon for 'go buttons' ****************************************/
+/* @import "./css/locationbar_searchbar_go_button.css"; /**/
 
 /* 'Light' and 'Dark' toolbar and tabs themes + 'tabs not on top' (known from "Noia" themes) ***/
 /* [!] only use on at a time *******************************************************************/
 /* @import "./css/noiaui_light.css"; /**/  /* Light theme */
 /* @import "./css/noiaui_light_tabs_below_navigation_toolbar.css"; /**/  /* Light theme + 'tabs not on top' */
-/* @import "./css/noiaui_light_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Light theme + 'tabs not on top' for Fx65-71 */
-/*  @import "./css/noiaui_light_tabs_below_navigation_toolbar_fx72.css"; /**/  /* Light theme + 'tabs not on top' for Fx72+ */
 /* @import "./css/noiaui_dark.css"; /**/  /* Dark theme*/
 /* @import "./css/noiaui_dark_tabs_below_navigation_toolbar.css"; /**/  /* Dark theme + 'tabs not on top' */
-/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar_fx65.css"; /**/  /* Dark theme + 'tabs not on top' for Fx65-71 */
-/* @import "./css/noiaui_dark_tabs_below_navigation_toolbar_fx72.css"; /**/  /* Dark theme + 'tabs not on top' for Fx72+ */
 
 /* Alternative tab colors for aboves 'Light' and 'Dark' themes *********************************/
 /* [!] only use on at a time *******************************************************************/
 /* @import "./css/noiaui_light_alternative_tabs.css"; /**/
 /* @import "./css/noiaui_dark_alternative_tabs.css"; /**/
 
-/* Separator between nav-bar and bookmarks toolbar for aboves 'Light' and 'Dark' themes ********/
+/* Separator between nav-bar and bookmarks toolbar for above's 'Light' and 'Dark' themes *******/
 /* [!] only use on at a time *******************************************************************/
 /* @import "./css/noiaui_light_navbar_bookbar_separator.css"; /**/
 /* @import "./css/noiaui_dark_navbar_bookbar_separator.css"; /**/
-
-

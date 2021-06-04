@@ -1,6 +1,5 @@
-/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* Firefox userChrome.css tweaks ****************************************************************/
 /* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
-/************************************************************************************************/
 /************************************************************************************************/
 
 
@@ -42,6 +41,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 ** from my Classic Theme Restorer add-on **************
 ******************************************************/
 
+@media not (-moz-proton) {
 :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab .tab-content {
   -moz-box-align: center !important;
@@ -79,17 +79,6 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   opacity: 0 !important;
 }
 
-.tabbrowser-tab .tab-background[selected=true] {
-  border-image: unset !important;
-  border-image-slice: 0 !important;
-}
-
-.tabbrowser-tab:not([selected]) .tab-background{
-  display: none !important;
-}
-
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
-  background-color: rgba(0,0,0,.0) !important;
 }
 
 /*******************************************/
@@ -105,34 +94,23 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   color: black !important;
 }
 
-/* default tabs color */
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
-.tabbrowser-tab .tab-content {
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon,
+.tab-background {
   background-image: linear-gradient(#000000,#000000,#000000,#444444,#939393) !important;
-}
-
-/* selected & hovered tabs color */
-.tabbrowser-tab .tab-content[selected="true"],
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
-.tabbrowser-tab:hover .tab-content:not([selected="true"]) {
-  background-image: linear-gradient(#99FFFF,#00CCFF,#99FFFF) !important;
-}
-
-/* unloaded/pending tabs color *//*
-.tabbrowser-tab[pending] .tab-content {
-  background: red !important;
-}
-*/
-
-/* tab border color */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
-#TabsToolbar .tabbrowser-tab .tab-content {
   border: 1px solid #969696 !important;
+  box-shadow:
+	0 0 2px rgba(255, 255, 255, 0.2) inset,
+	0 4px 6px rgba(255, 255, 255, 0.2) inset,
+	0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
+	0 13px 8px rgba(150, 150, 150, 0.3) inset, 
+	1px 2px 4px rgba(0, 0, 0, 0.3) !important; 
 }
 
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
-#TabsToolbar .tabbrowser-tab[selected] .tab-content,
-#TabsToolbar .tabbrowser-tab:hover .tab-content {
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover .toolbarbutton-icon,
+.tab-background[multiselected=true],
+.tab-background[selected=true],
+.tabbrowser-tab:hover .tab-background {
+  background-image: linear-gradient(#99FFFF,#00CCFF,#99FFFF) !important;
   border: 1px solid #c7ecfb !important;
 }
 
@@ -144,6 +122,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 #TabsToolbar .tabbrowser-tab .tab-content {
   border-radius: 4px !important;
 }
+
 
 /* loading animation */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:not([visuallyselected=true]) {
@@ -164,29 +143,10 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 .tabbrowser-tab:not([pinned])[busy] .tab-icon-image {
   display: none !important;
 }
+
 /* remove non-required icon pending */
 .tab-icon-pending {
   display: none !important;
-}
-
-/* width of new tab tab */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
-  min-width: 0px !important;
-  width: 30px !important;
-  margin-bottom: 0px !important;
-}
-
-/* size of new tab tabs '+' icon */
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon{
-  min-width: 0px !important;
-  min-height: 0px !important;
-  width: 16px !important;
-  height: 16px !important;
-  margin: 0px !important;
-  margin-bottom: 0px !important;
-  padding: 0px !important;
-  background: unset !important;
-  box-shadow: unset !important;
 }
 
 /* tab close button */
@@ -225,71 +185,25 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   height: 16px !important;
 }
 
-/*tab favicon position*/
-.tabbrowser-tab:not([pinned]):not([locked]) .tab-throbber,
-.tabbrowser-tab:not([pinned]) .tab-icon-image{
-  -moz-margin-start: -6px !important;
+*[type="pre-tabs"],
+*[type="post-tabs"] {
+  display: none !important;
 }
 
-/*pinned tabs*/
-#TabsToolbar .tab-content[pinned] {
-  padding: 0 6px !important;
+
+@media (-moz-proton) {
+
+.tab-close-button {
+  margin-inline-end: unset !important;
+  width: unset !important;
+  height: unset !important;
+  padding: unset !important;
+  border-radius: unset !important;
 }
 
-/* hide tab separators */
-.tabbrowser-tab::after,
-.tabbrowser-tab::before {
-  opacity: 0 !important;
-  border-image: unset !important;
-  border-image-slice: unset !important;
+.tabbrowser-tab:not(:hover) > .tab-stack > .tab-content > .tab-close-button {
+  padding-inline-start: unset !important;
   width: unset !important;
 }
-#tabbrowser-tabs[movingtab] > .tabbrowser-tab[beforeselected]:not([last-visible-tab])::after,
-.tabbrowser-tab:not([selected]):not([afterselected-visible]):not([afterhovered]):not([first-visible-tab]):not(:hover)::before,
-#tabbrowser-tabs:not([overflow]) > .tabbrowser-tab[last-visible-tab]:not([selected]):not([beforehovered]):not(:hover)::after {
-  content: unset !important;
-  display: unset !important;
-}
-/**/
 
-.titlebar-placeholder[type="pre-tabs"] {
-  display: none !important;
-}
-
-/* remove crap set by Firefox 58+ */
-.tabbrowser-tab,
-.tab-stack,
-.tab-background {
-  border: unset !important;
-}
-
-.tabbrowser-tab::after,
-.tabbrowser-tab::before {
-  border-left: unset !important;
-  border-image: unset !important;
-  border-image-slice: unset !important;
-  border-top-left-radius: 3px !important;
-  border-top-right-radius: 3px !important;
-}
-
-:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::after,
-:root[tabsintitlebar]:not([extradragspace]) #toolbar-menubar[autohide=true] ~ #TabsToolbar > #tabbrowser-tabs > .tabbrowser-tab::before,
-.tabbrowser-tab:hover::before,
-.tabbrowser-tab[last-visible-tab]:hover::after,
-#tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[afterhovered]::before {
-  border-image: unset !important;
-  border-image-slice: unset !important;
-  border-top-left-radius: 4px !important;
-  border-top-right-radius: 4px !important;
-  border-radius: 4px !important;
-}
-
-#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
-#TabsToolbar .titlebar-placeholder[type="post-tabs"]{
-  opacity: 0 !important;
-}
-
-#TabsToolbar .titlebar-spacer[type="pre-tabs"],
-#TabsToolbar .titlebar-spacer[type="post-tabs"] {
-  display: none !important;
 }

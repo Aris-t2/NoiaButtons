@@ -1,0 +1,42 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
+/************************************************************************************************/
+
+
+#urlbar #urlbar-go-button,
+#searchbar .search-go-button {
+  list-style-image: url("./../images/toolbar_noia.png") !important;
+  -moz-image-region: rect(0, 144px, 36px, 108px) !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+}
+
+#main-window[uidensity="compact"] #urlbar #urlbar-go-button,
+#main-window[uidensity="compact"] #searchbar .search-go-button {
+  padding: 4px !important;
+}
+
+#main-window:not([uidensity="touch"]):not([uidensity="compact"]) #urlbar #urlbar-go-button,
+#main-window:not([uidensity="touch"]):not([uidensity="compact"]) #searchbar .search-go-button {
+  padding: 4px 2px !important;
+}
+
+#main-window[uidensity="touch"] #urlbar #urlbar-go-button,
+#main-window[uidensity="touch"] #searchbar .search-go-button {
+  padding: 4px 2px !important;
+}
+
+#urlbar #urlbar-go-button:hover,
+#searchbar .search-go-button:hover{
+  filter: brightness(1.15) !important;
+}
+
+#urlbar #urlbar-go-button,
+#searchbar .search-go-button {
+  -moz-appearance: none !important;
+  background:none !important;
+  box-shadow: none !important;
+}

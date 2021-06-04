@@ -1,18 +1,18 @@
-/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* Firefox userChrome.css tweaks ****************************************************************/
 /* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
 /************************************************************************************************/
 
-
 /* default tabs color v2 */
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
-.tabbrowser-tab .tab-content {
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon,
+.tab-background {
   background-image: linear-gradient(#000000,#000000) !important;
 }
 
 /* selected & hovered tabs color v2 */
-.tabbrowser-tab .tab-content[selected="true"],
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover,
-.tabbrowser-tab:hover .tab-content:not([selected="true"]) {
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover .toolbarbutton-icon,
+.tab-background[multiselected=true],
+.tab-background[selected=true],
+.tabbrowser-tab:hover .tab-background {
   background-image: linear-gradient(#000000,#000000,#000000,#444444,#838383) !important;
   color: #ffffff !important;
 }
@@ -22,3 +22,5 @@
 .tabbrowser-tab:hover .tab-content:not([selected="true"]) .tab-label {
   color: #ffffff !important;
 }
+
+

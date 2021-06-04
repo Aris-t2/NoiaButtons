@@ -1,4 +1,4 @@
-/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* Firefox userChrome.css tweaks ****************************************************************/
 /* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
 /************************************************************************************************/
 
@@ -15,28 +15,28 @@ toolbar:not(#nav-bar) :-moz-any(#back-button, #forward-button, #home-button, #st
   margin: 0px 2px !important;
 }
 
-#downloads-button:not([attention]) > #downloads-indicator-anchor > #downloads-indicator-icon,
-#downloads-button #downloads-indicator-icon,
-#downloads-button[attention] > #downloads-indicator-anchor > #downloads-indicator-icon,
-#downloads-button #downloads-indicator-progress-inner {
-  visibility: hidden !important;
+/* downloads button */
+#downloads-button .toolbarbutton-icon {
+  -moz-image-region: rect(0, 396px, 36px, 360px) !important;
+  display: -moz-box !important;
+  visibility: visible !important;
 }
 
-toolbar:not(#nav-bar) #downloads-button #downloads-indicator-progress-outer,
-toolbar:not(#nav-bar) #downloads-button #downloads-indicator-icon {
-  width: 20px !important;
-  height: 20px !important;
-  background-size: 20px !important;
+#downloads-button[attention="success"] .toolbarbutton-icon {
+  -moz-image-region: rect(36px, 396px, 72px, 360px) !important;
+  display: -moz-box !important;
+  visibility: visible !important;
 }
 
-#downloads-button:not(:-moz-any([progress],[counter],[paused],[attention])) #downloads-indicator-progress-outer,
-#downloads-button:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
-#downloads-button:not([attention]) > #downloads-indicator-anchor > #downloads-indicator-icon,
-#downloads-button #downloads-indicator-icon,
-#downloads-button[attention] #downloads-indicator-progress-outer,
-#downloads-button[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+#downloads-button[progress="true"] .toolbarbutton-icon {
+  -moz-image-region: rect(0px, 36px, 36px, 0px) !important;
+  display: -moz-box !important;
+  visibility: visible !important;
+}
+
+#downloads-indicator-start-box,
+#downloads-indicator-finish-box {
+  display: none !important;
 }
 
 /* button size palette */
