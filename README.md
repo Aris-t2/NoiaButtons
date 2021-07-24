@@ -1,4 +1,4 @@
-## NoiaButtons for Firefox Quantum (60+)
+## NoiaButtons for Firefox
 
 **[Releases & changelog](https://github.com/Aris-t2/Noiabuttons/releases)**
 
@@ -8,14 +8,14 @@
 
 ## Instructions / Howto / Readme
 
-- [WebExtensions can not modify Firefox Quantums appearance properly](#webextensions-can-not-modify-firefox-quantums-appearance-properly)  
+- [WebExtensions can not modify Firefox appearance properly](#webextensions-can-not-modify-firefox-appearance-properly)  
 - [Where to find Firefox profile folder? The correct location for user styles.](#where-to-find-firefox-profile-folder-the-correct-location-for-user-styles)  
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
 - [How to find item ids and attributes?](#how-to-find-item-ids-and-attributes)  
 - [How to modify custom user styles?](#how-to-modify-custom-user-styles)  
 - [Available options](#available-options)  
 
-## WebExtensions can not modify Firefox Quantums appearance properly
+## WebExtensions can not modify Firefox appearance properly
 
 The only way to modify ui is adding custom CSS code to **userChrome.css** and **userContent.css** files inside browsers profile folder.  
 Keep in mind CSS code can not create entirely new items, buttons or toolbars. It only can modify already present ui items.  
@@ -127,16 +127,11 @@ Remove `/*` at lines end to make that part of the code active. Save the file and
 [Themes for toolbars and tabs known from 'Noia4' and 'NoiaFox' themes *]  
 - Noia theme (light)  
 - Noia theme (light) + tabs below navigation toolbar  
-- Noia theme (light) + tabs below navigation toolbar (Fx65+)  
 - Noia theme (dark)  
 - Noia theme (dark) + tabs below navigation toolbar  
-- Noia theme (dark) + tabs below navigation toolbar (Fx65+)  
   
 [Additional theme settings]  
 - Noia theme (light): alternative tab colors  
 - Noia theme (dark): alternative tab colors  
 - Noia theme (light): separator between navigation toolbar and bookmarks toolbar  
 - Noia theme (dark): separator between navigation toolbar and bookmarks toolbar  
-
-
-
