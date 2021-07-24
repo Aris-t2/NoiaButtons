@@ -4,13 +4,13 @@
 
 
 /* default tabs color v2 */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon,
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon,
 .tab-background {
   background-image: linear-gradient(#d5d5d5,#CCCCCC,#d5d5d5) !important;
 }
 
 /* selected & hovered tabs color v2 */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover .toolbarbutton-icon,
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button):hover .toolbarbutton-icon,
 .tab-background[multiselected=true],
 .tab-background[selected=true],
 .tabbrowser-tab:hover .tab-background {

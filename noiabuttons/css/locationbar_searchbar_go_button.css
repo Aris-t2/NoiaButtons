@@ -36,7 +36,7 @@
 
 #urlbar #urlbar-go-button,
 #searchbar .search-go-button {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background:none !important;
   box-shadow: none !important;
 }

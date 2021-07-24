@@ -41,46 +41,6 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 ** from my Classic Theme Restorer add-on **************
 ******************************************************/
 
-@media not (-moz-proton) {
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
-.tabbrowser-tab .tab-content {
-  -moz-box-align: center !important;
-  border-radius: 4px !important;
-  text-shadow: none !important;
-  min-height: 26px !important;
-  box-shadow:
-	0 0 2px rgba(255, 255, 255, 0.2) inset,
-	0 4px 6px rgba(255, 255, 255, 0.2) inset,
-	0 11px 0 -2px rgba(255, 255, 255, 0.2) inset,
-	0 13px 8px rgba(150, 150, 150, 0.3) inset, 
-	1px 2px 4px rgba(0, 0, 0, 0.3) !important; 
-}
-
-/* remove tab fog */
-#TabsToolbar,
-#TabsToolbar::before,
-#TabsToolbar::after {
-  box-shadow: unset !important;
-}
-
-#TabsToolbar {
-  /*margin-top: 1px !important;*/
-  margin-bottom: 1px !important;
-}
-
-/* tab line & tab background*/
-.tabbrowser-tab:-moz-lwtheme[selected] .tab-line[selected=true] {
-  height: 0px !important;
-}
-
-.tabbrowser-tab > .tab-stack > .tab-background > .tab-line[selected=true],
-.tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected=true]) {
-  background-color: rgba(0,0,0,.2);
-  opacity: 0 !important;
-}
-
-}
-
 /*******************************************/
 /**** default themes tab colors [start] ****/
 /*******************************************/
@@ -94,7 +54,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   color: black !important;
 }
 
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon,
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button) .toolbarbutton-icon,
 .tab-background {
   background-image: linear-gradient(#000000,#000000,#000000,#444444,#939393) !important;
   border: 1px solid #969696 !important;
@@ -106,7 +66,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 	1px 2px 4px rgba(0, 0, 0, 0.3) !important; 
 }
 
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button):hover .toolbarbutton-icon,
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button):hover .toolbarbutton-icon,
 .tab-background[multiselected=true],
 .tab-background[selected=true],
 .tabbrowser-tab:hover .tab-background {
@@ -115,7 +75,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 }
 
 /* tab top border roundness */
-#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button),
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
@@ -123,16 +83,15 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   border-radius: 4px !important;
 }
 
-
 /* loading animation */
 #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:not([visuallyselected=true]) {
   --tab-loading-fill: #0A84FF !important;
 }
 
 /* space between tabs */
-:-moz-any(.tabs-newtab-button,#tabs-newtab-button),
+:is(.tabs-newtab-button,#tabs-newtab-button),
 .tabbrowser-tab {
-  -moz-margin-start: 0px !important;
+  margin-inline-start: 0px !important;
 }
 
 /* show favicon for tabs without favicons */
@@ -151,7 +110,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 
 /* tab close button */
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button {
-  -moz-appearance: none !important;
+  appearance: none !important;
   -moz-image-region: rect(0, 64px, 16px, 48px) !important;
   border: none !important;
   padding: 0px !important;
@@ -190,9 +149,6 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
   display: none !important;
 }
 
-
-@media (-moz-proton) {
-
 .tab-close-button {
   margin-inline-end: unset !important;
   width: unset !important;
@@ -204,6 +160,4 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 .tabbrowser-tab:not(:hover) > .tab-stack > .tab-content > .tab-close-button {
   padding-inline-start: unset !important;
   width: unset !important;
-}
-
 }
