@@ -6,6 +6,10 @@
 
 **[[ Paypal Me ]](https://www.paypal.me/tkpay)**  
 
+## Unlock custom CSS usage
+
+`about:config` > `toolkit.legacyUserProfileCustomizations.stylesheets` > `true`  
+
 ## Instructions / Howto / Readme
 
 - [WebExtensions can not modify Firefox appearance properly](#webextensions-can-not-modify-firefox-appearance-properly)  
