@@ -163,11 +163,11 @@
   position: absolute !important;
   display: block !important;
   bottom: 0 !important;
-  width: 100vw !important;
+  width: 100% !important;
 }
 
 #tabbrowser-tabs {
-  width: 100vw !important;
+  width: 100% !important;
 }
 
 /* move caption buttons to windows top right position */
