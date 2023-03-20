@@ -177,7 +177,7 @@
 /* caption button position in maximized mode after moving to the top */
 #main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container,
 #main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #TabsToolbar .titlebar-buttonbox-container {
-  top: -14px !important;
+  top: 0px !important;
 }
 
 
