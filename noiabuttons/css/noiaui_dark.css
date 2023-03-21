@@ -111,28 +111,27 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 /* tab close button */
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button {
   appearance: none !important;
-  -moz-image-region: rect(0, 64px, 16px, 48px) !important;
   border: none !important;
   padding: 0px !important;
-  list-style-image: url("./../images/close.png") !important;
+  list-style-image: url("./../images/close4.png") !important; /*4*/
   background: unset !important;
 }
 
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]):hover .tab-close-button:hover,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button:hover,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button[selected="true"]:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+  list-style-image: url("./../images/close2.png") !important;
 }
 
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]):hover .tab-close-button:hover:active,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button:hover:active,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button[selected="true"]:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px) !important;
+  list-style-image: url("./../images/close3.png") !important;
 }
 
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]):hover .tab-close-button,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button[selected="true"] {
-  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+  list-style-image: url("./../images/close1.png") !important;
 }
 
 .tabbrowser-tab .tab-close-button{

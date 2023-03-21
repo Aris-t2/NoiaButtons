@@ -1,75 +1,100 @@
-/* Firefox userChrome.css tweaks ****************************************************************/
-/* Code mostly taken from 'NoiaButtons' add-on **************************************************/
-/* Github: https://github.com/aris-t2/noiabuttons ***********************************************/
-/************************************************************************************************/
+/*===============================================================================
+  Code mostly taken from 'NoiaButtons' add-on
+  Github: https://github.com/aris-t2/noiabuttons
 
-/************************************************************************************************/
-/* NoiaButtons CSS for Firefox 108-111 **********************************************************/
-/* Version 2.0.3 ********************************************************************************/
-/************************************************************************************************/
 
-/* Last version compatible with Firefox 60-88 is v1.1.5 ******************************************
-   Get it here: https://github.com/Aris-t2/NoiaButtons/releases/tag/1.1.5
-*************************************************************************************************/
+  NoiaButtons CSS for Firefox 111+ 
+  Version 3.0.0 
 
-/* Last version compatible with Firefox 89-107 is v2.0.1 ******************************************
-   Get it here: https://github.com/Aris-t2/NoiaButtons/releases/tag/2.0.1
-*************************************************************************************************/
 
-/*************************************************************************************************
+  Last version compatible with Firefox 60-88 is v1.1.5 
+  https://github.com/Aris-t2/NoiaButtons/releases/tag/1.1.5
+
+  Last version compatible with Firefox 89-107 is v2.0.1 
+  https://github.com/Aris-t2/NoiaButtons/releases/tag/2.0.1
+
+  Last version compatible with Firefox 107-111 is v2.0.3
+  https://github.com/Aris-t2/NoiaButtons/releases/tag/2.0.3
+
+  ===============================================================================
 
   README
   
-  [!] For custom code to be able to load this preference has to be enabled:
-	  'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
-	
-  [!] Proton UI has to be enabled:
-	  'about:config > browser.proton.toolbar.version > true'
+  Firefox requires the following preference to be enabled for custom styles to be loaded:
   
-  Finding profile folder: address bar > about:support > Profile Folder > Open Folder
-  CSS files and sub-folders belong into \PROFILEFOLDER\chrome\ directory.
+    'about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true'
   
-  ENABLING options: remove the combination of / and * before '@import'.
-  DISABLING options: add the combination of / and * before '@import'. 
+  Firefox preferences can be accessed by typing 'about:config' into the url bar.
   
-*************************************************************************************************/
+  ===============================================================================
+  
+  ======
+  README
+  ======
+
+  To find the profile folder type `about:support` into url bar and navigate to: 
+  'Profile Folder > Open Folder'
+  
+  Create a /chrome/ (chrome) directory btw. folder inside the profile folder you just opened and
+  paste projects files and folders into it, so it looks like this:
+  
+  /chrome/css/
+  /chrome/images/
+  /chrome/userChrome.css
+
+  ENABLING/DISABLING options:
+  To activate an option: remove /* before @import
+  To deactivate an option: add /* before @import
+  
+*/
 
 
-/* Icons for default browser buttons ************************************************************/
-/* [!] only use on at a time ********************************************************************/
+/* Icons for default browser buttons 
+   [!] only use one at a time
+*/
 @import "./css/toolbar_buttons_noia.css"; /**/
 /* @import "./css/toolbar_buttons_firefox1.css"; /**/
 /* @import "./css/toolbar_buttons_firefox2.css"; /**/
 /* @import "./css/toolbar_buttons_firefox3.css"; /**/
 /* @import "./css/toolbar_buttons_firefox3aero.css"; /**/
 
-/* Shrink icons on hover ************************************************************************/
+
+/* Shrink icons on hover */
 @import "./css/toolbar_buttons_reduce_size_on_hover.css"; /**/
 
-/* Icon size on navigation toolbar (auto: compact=24/normal=30/touch=36) ************************/
-/* [!] only use on at a time ********************************************************************/
+
+/* Icon size on navigation toolbar (auto: compact=24/normal=30/touch=36)
+   [!] only use one at a time
+*/
 @import "./css/toolbar_buttons_size_on_navbar_auto.css"; /**/
 /* @import "./css/toolbar_buttons_size_on_navbar_18px.css"; /**/
 /* @import "./css/toolbar_buttons_size_on_navbar_24px.css"; /**/
 /* @import "./css/toolbar_buttons_size_on_navbar_30px.css"; /**/
 /* @import "./css/toolbar_buttons_size_on_navbar_36px.css"; /**/
 
-/* Location bar & search bar: Noia icon for 'go buttons' ****************************************/
+
+/* Location bar & search bar: Noia icon for 'go buttons' */
 /* @import "./css/locationbar_searchbar_go_button.css"; /**/
 
-/* 'Light' and 'Dark' toolbar and tabs themes + 'tabs not on top' (known from "Noia" themes) ***/
-/* [!] only use on at a time *******************************************************************/
+
+/* 'Light' and 'Dark' toolbar and tabs themes + 'tabs not on top' (known from "Noia" themes)
+   [!] only use one at a time
+*/
 /* @import "./css/noiaui_light.css"; /**/  /* Light theme */
 /* @import "./css/noiaui_light_tabs_below_navigation_toolbar.css"; /**/  /* Light theme + 'tabs not on top' */
 /* @import "./css/noiaui_dark.css"; /**/  /* Dark theme*/
 /* @import "./css/noiaui_dark_tabs_below_navigation_toolbar.css"; /**/  /* Dark theme + 'tabs not on top' */
 
-/* Alternative tab colors for aboves 'Light' and 'Dark' themes *********************************/
-/* [!] only use on at a time *******************************************************************/
+
+/* Alternative tab colors for above's 'Light' and 'Dark' themes
+   [!] only use one at a time
+*/
 /* @import "./css/noiaui_light_alternative_tabs.css"; /**/
 /* @import "./css/noiaui_dark_alternative_tabs.css"; /**/
 
-/* Separator between nav-bar and bookmarks toolbar for above's 'Light' and 'Dark' themes *******/
-/* [!] only use on at a time *******************************************************************/
+
+/* Separator between nav-bar and bookmarks toolbar for above's 'Light' and 'Dark' themes
+   [!] only use one at a time
+*/
 /* @import "./css/noiaui_light_navbar_bookbar_separator.css"; /**/
 /* @import "./css/noiaui_dark_navbar_bookbar_separator.css"; /**/

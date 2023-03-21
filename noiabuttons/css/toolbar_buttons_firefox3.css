@@ -5,17 +5,159 @@
 
 @import url(./toolbar_buttons_base.css);
 
-/* noia icons */
-
-:is(#back-button, #forward-button, #home-button,#stop-button,#reload-button, #print-button, #downloads-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #fullscreen-button, #sync-button, #feed-button, #tabview-button, #social-share-button, #open-file-button, #find-button, #developer-button, #preferences-button, #privatebrowsing-button, #save-page-button, #add-ons-button, #history-panelmenu, #nav-bar-overflow-button, #PanelUI-menu-button, #characterencoding-button, #email-link-button, #sidebar-button, #zoom-out-button, #zoom-reset-button, #zoom-in-button, #cut-button, #copy-button, #paste-button, #e10s-button, #panic-button, #web-apps-button, #webide-button, #loop-button, #pocket-button, #containers-panelmenu, #library-button, #bookmarks-toolbar-placeholder) {
-  list-style-image: url("./../images/toolbar_fx3.png") !important;
+/* icons */
+#tabs-newtab-button {
+  list-style-image: url("./../images/newtab.png") !important;
 }
 
-#downloads-button .toolbarbutton-icon,
-#downloads-button[attention="success"] .toolbarbutton-icon {
-  list-style-image: url("./../images/toolbar_fx3.png") !important;
+#back-button {
+  list-style-image: url("./../images/icons_fx3/back.png") !important;
 }
 
-#downloads-button[progress="true"] .toolbarbutton-icon {
-  list-style-image: url("./../images/toolbar_dl_progress_fx3.png") !important;
+#forward-button {
+  list-style-image: url("./../images/icons_fx3/forward.png") !important;
+}
+
+#home-button {
+  list-style-image: url("./../images/icons_fx3/home.png") !important;
+}
+
+#stop-button {
+  list-style-image: url("./../images/icons_fx3/stop.png") !important;
+}
+
+#reload-button {
+  list-style-image: url("./../images/icons_fx3/reload.png") !important;
+}
+
+#bookmarks-menu-button, #bookmarks-toolbar-placeholder {
+  list-style-image: url("./../images/icons_fx3/bookmarks.png") !important;
+}
+
+#history-panelmenu {
+  list-style-image: url("./../images/icons_fx3/history.png") !important;
+}
+
+#add-ons-button, #unified-extensions-button {
+  list-style-image: url("./../images/icons_fx3/addons.png") !important;
+}
+
+#open-file-button {
+  list-style-image: url("./../images/icons_fx3/openfile.png") !important;
+}
+
+#save-page-button {
+  list-style-image: url("./../images/icons_fx3/savepage.png") !important;
+}
+
+#sync-button {
+  list-style-image: url("./../images/icons_fx3/sync.png") !important;
+}
+
+#characterencoding-button {
+  list-style-image: url("./../images/icons_fx3/characterencoding.png") !important;
+}
+
+#new-window-button {
+  list-style-image: url("./../images/icons_fx3/newwindow.png") !important;
+}
+
+#new-tab-button {
+  list-style-image: url("./../images/icons_fx3/newtab.png") !important;
+}
+
+#privatebrowsing-button {
+  list-style-image: url("./../images/icons_fx3/privatebrowsing.png") !important;
+}
+
+#find-button {
+  list-style-image: url("./../images/icons_fx3/find.png") !important;
+}
+
+#print-button {
+  list-style-image: url("./../images/icons_fx3/print.png") !important;
+}
+
+#fullscreen-button {
+  list-style-image: url("./../images/icons_fx3/fullscreen.png") !important;
+}
+
+#developer-button {
+  list-style-image: url("./../images/icons_fx3/developer.png") !important;
+}
+
+#preferences-button {
+  list-style-image: url("./../images/icons_fx3/preferences.png") !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("./../images/icons_fx3/appmenu.png") !important;
+}
+
+#cut-button {
+  list-style-image: url("./../images/icons_fx3/edit_cut.png") !important;
+}
+
+#copy-button {
+  list-style-image: url("./../images/icons_fx3/edit_copy.png") !important;
+}
+
+#paste-button {
+  list-style-image: url("./../images/icons_fx3/edit_paste.png") !important;
+}
+
+#zoom-out-button {
+  list-style-image: url("./../images/icons_fx3/zoom_out.png") !important;
+}
+
+#zoom-in-button {
+  list-style-image: url("./../images/icons_fx3/zoom_in.png") !important;
+}
+
+#email-link-button {
+  list-style-image: url("./../images/icons_fx3/emaillink.png") !important;
+}
+
+#sidebar-button {
+  list-style-image: url("./../images/icons_fx3/sidebar.png") !important;
+}
+
+#library-button {
+  list-style-image: url("./../images/icons_fx3/library.png") !important;
+}
+
+#nav-bar-overflow-button {
+  list-style-image: url("./../images/icons_fx3/overflow_chevron.png") !important;
+}
+
+#alltabs-button {
+  list-style-image: url("./../images/icons_fx3/alltabs.png") !important;
+}
+
+#downloads-indicator-anchor {
+  list-style-image: url("./../images/icons_fx3/downloads.png") !important;
+}
+
+#downloads-button[attention="success"] #downloads-indicator-anchor {
+  list-style-image: url("./../images/icons_fx3/downloads2.png") !important;
+}
+
+#downloads-button[progress] #downloads-indicator-anchor {
+  list-style-image: url("./../images/icons_fx3/downloads3.png") !important;
+}
+
+#panic-button {
+  list-style-image: url("./../images/icons_fx3/panic.png") !important;
+}
+
+#panic-button[open] {
+  list-style-image: url("./../images/icons_fx3/panic2.png") !important;
+}
+
+#save-to-pocket-button {
+  list-style-image: url("./../images/icons_fx3/savetopocket.png") !important;
+}
+
+#save-to-pocket-button[open] {
+  list-style-image: url("./../images/icons_fx3/savetopocket2.png") !important;
 }

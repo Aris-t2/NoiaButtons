@@ -51,39 +51,13 @@
 
 #main-window[tabsintitlebar][sizemode="normal"]:not([inFullscreen]) #TabsToolbar {
   margin-top: 0px !important;
-  border-left: 1px solid #5f7181 !important;
-  border-right: 1px solid #5f7181 !important;
-}
-
-#print-preview-toolbar,
-#printedit-toolbar,
-#titlebar {
-  -moz-box-ordinal-group: 0 !important;
-}
-
-#navigator-toolbox #toolbar-menubar {
-  -moz-box-ordinal-group: 1 !important;
-}
-/* navigation toolbar */
-#navigator-toolbox #nav-bar {
-  -moz-box-ordinal-group: 2 !important;
-}
-/* bookmarks toolbar */
-#navigator-toolbox #PersonalToolbar {
-  -moz-box-ordinal-group: 3 !important;
-}
-/* 3rd party toolbars */
-#navigator-toolbox toolbar {
-  -moz-box-ordinal-group: 10 !important;
-}
-/**/
-#navigator-toolbox #TabsToolbar {
-  -moz-box-ordinal-group: 100 !important;
+  /*border-left: 1px solid #5f7181 !important;
+  border-right: 1px solid #5f7181 !important;*/
 }
 
 #TabsToolbar{
   margin-bottom: 0px !important;
-  border-bottom: 1px solid #5f7181 !important;
+  /*border-bottom: 1px solid #5f7181 !important;*/
 }
 
 #main-window:not([inFullscreen="true"])[tabsintitlebar] #TabsToolbar{
@@ -146,19 +120,6 @@
   margin-top: unset !important;
 }
 
-
-#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {
-  padding-bottom: 30px !important;
-}
-
-#main-window:not([chromehidden*="toolbar"]):not([uidensity="compact"]):not([uidensity="touch"]) #navigator-toolbox {
-  padding-bottom: 34px !important;
-}
-
-#main-window:not([chromehidden*="toolbar"])[uidensity="touch"] #navigator-toolbox {
-  padding-bottom: 42px !important;
-}
-
 #TabsToolbar {
   position: absolute !important;
   display: block !important;
@@ -185,7 +146,7 @@
 }
 
 
-/* Windows */
+/* Windows *//*
 @media (-moz-os-version:windows-win10), (-moz-os-version:windows-win8), (-moz-os-version:windows-win7) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container	{
 	  top: 1px !important;
@@ -195,7 +156,7 @@
 	}
 }
 
-/* Windows 7 extra tweaks */
+/* Windows 7 extra tweaks *//*
 @media (-moz-os-version: windows-win7) {
   @media all and (-moz-windows-compositor) {
 	#main-window[tabsintitlebar]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
@@ -215,7 +176,7 @@
   }
 }
 
-/* Windows 10 extra tweaks */
+/* Windows 10 extra tweaks *//*
 @media (-moz-os-version: windows-win10) {
   #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme):hover:not([disabled="true"]),
   #main-window:not([tabsintitlebar]) menubar > menu:not(:-moz-lwtheme)[_moz-menuactive="true"]:not([disabled="true"]) {

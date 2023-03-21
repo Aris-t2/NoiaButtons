@@ -5,8 +5,7 @@
 
 #urlbar #urlbar-go-button,
 #searchbar .search-go-button {
-  list-style-image: url("./../images/toolbar_noia.png") !important;
-  -moz-image-region: rect(0, 144px, 36px, 108px) !important;
+  list-style-image: url("./../images/icons_noia/forward.png") !important;
   min-width: 24px !important;
   min-height: 24px !important;
   width: 24px !important;
