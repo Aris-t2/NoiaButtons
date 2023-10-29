@@ -3,10 +3,19 @@
 /************************************************************************************************/
 
 
-/* toolbar separator between navigation toolbar and bookmarks toolbar */
-#navigator-toolbox > #nav-bar {
+/* separators between toolbars */
+
+#toolbar-menubar {
   border-bottom: 1px solid #969797 !important;
 }
-#navigator-toolbox > #PersonalToolbar {
+
+#TabsToolbar,
+#main-window:not([tabsintitlebar]) #nav-bar,
+#nav-bar,
+#Tabstoolbar {
+  border-top: 1px solid #ffffff !important;
+  border-bottom: 1px solid #969797 !important;
+}
+#PersonalToolbar {
   border-top: 1px solid #ffffff !important;
 }

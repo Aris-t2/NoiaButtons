@@ -4,7 +4,7 @@
 
 
   NoiaButtons CSS for Firefox 111+ 
-  Version 3.0.0 
+  Version 3.0.1 
 
 
   Last version compatible with Firefox 60-88 is v1.1.5 
@@ -96,5 +96,5 @@
 /* Separator between nav-bar and bookmarks toolbar for above's 'Light' and 'Dark' themes
    [!] only use one at a time
 */
-/* @import "./css/noiaui_light_navbar_bookbar_separator.css"; /**/
-/* @import "./css/noiaui_dark_navbar_bookbar_separator.css"; /**/
+/* @import "./css/noiaui_light_separators_between_toolbars.css"; /**/
+/* @import "./css/noiaui_dark_separators_between_toolbars.css"; /**/

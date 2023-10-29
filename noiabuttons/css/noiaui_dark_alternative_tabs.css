@@ -11,8 +11,8 @@
 
 /* selected & hovered tabs color v2 */
 #TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button):hover .toolbarbutton-icon,
-.tab-background[multiselected=true],
-.tab-background[selected=true],
+.tab-background[multiselected],
+.tab-background[selected],
 .tabbrowser-tab:hover .tab-background {
   background-image: linear-gradient(#000000,#000000,#000000,#444444,#838383) !important;
   color: #ffffff !important;
