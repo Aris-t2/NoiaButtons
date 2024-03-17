@@ -81,7 +81,7 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 
 /* space between tabs */
 :is(.tabs-newtab-button,#tabs-newtab-button),
-.tabbrowser-tab {
+.tabbrowser-tab:not([pinned]) {
   margin-inline-start: 0px !important;
 }
 
@@ -100,20 +100,26 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 }
 
 /* tab close button */
+#closetab_fmarin_com-BAP,
+#tabmix-tabs-closebutton,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button {
   appearance: none !important;
   border: none !important;
   padding: 0px !important;
-  list-style-image: url("./../images/close4.png") !important; /*4*/
+  list-style-image: url("./../images/close1.png") !important; /*4*/
   background: unset !important;
 }
 
+#closetab_fmarin_com-BAP:hover,
+#tabmix-tabs-closebutton:hover,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]):hover .tab-close-button:hover,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button:hover,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button[selected="true"]:hover {
   list-style-image: url("./../images/close2.png") !important;
 }
 
+#closetab_fmarin_com-BAP:hover:active,
+#tabmix-tabs-closebutton:hover:active,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]):hover .tab-close-button:hover:active,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button:hover:active,
 .tabbrowser-tab:not([pinned]):not([protected]):not([autoReload]) .tab-close-button[selected="true"]:hover:active {
@@ -128,16 +134,11 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 .tabbrowser-tab .tab-close-button{
   opacity: 1.0 !important;
 }
-
+/*
 #TabsToolbar .close-icon > .toolbarbutton-icon {
   width: 16px !important;
   height: 16px !important;
-}
-
-*[type="pre-tabs"],
-*[type="post-tabs"] {
-  display: none !important;
-}
+}*/
 
 .tab-close-button {
   margin-inline-end: unset !important;
@@ -150,4 +151,10 @@ toolbar:not(#nav-bar):not(#TabsToolbar):not(#toolbar-menubar),
 .tabbrowser-tab:not(:hover) > .tab-stack > .tab-content > .tab-close-button {
   padding-inline-start: unset !important;
   width: unset !important;
+}
+
+/* remove unneeded space on tabs toolbar */
+*[type="pre-tabs"],
+*[type="post-tabs"] {
+  display: none !important;
 }

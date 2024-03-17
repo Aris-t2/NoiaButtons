@@ -86,3 +86,6 @@ toolbar :is(#back-button, #forward-button, #home-button, #stop-button, #reload-b
   display: none !important;
 }*/
 
+#TabsToolbar :is(.tabs-newtab-button,#tabs-newtab-button) {
+  margin: 0 !important;
+}
